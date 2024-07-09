@@ -25,6 +25,13 @@ export const userData = [
 
         description: " A Passionate and aspiring Fullstack Web Developer currently pursuing my B.Tech in Computer Science & Engineering Throughout my academic journey, I have cultivated a strong foundation in Programming and Web Development, and I am eager to apply my skills in real-world projects.",
 
+        
+        facebook: "https://www.facebook.com/biswa.ghosh.927/",
+        insta: "https://www.instagram.com/i_ambiswarup/",
+        twitter: "https://x.com/Im_Biswarup",
+        linkedin: "https://www.linkedin.com/in/biswarup-ghosh-61440828a/",
+        github: "https://github.com/ImBiswarup",
+
     }
 
 ]
