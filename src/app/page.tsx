@@ -1,6 +1,5 @@
 "use client";
 
-import SignupModal from "@/components/SignupModal";
 import { userData } from "@/utils/Data";
 import Image from "next/image";
 import Link from "next/link";
@@ -34,11 +33,6 @@ export default function Home() {
                             <button className="border rounded-full p-2 text-white hover:bg-white hover:text-gray-900 transition duration-300">
                                 Download CV
                             </button>
-                            {
-                                SignupModal && (
-                                    <SignupModal />
-                                )
-                            }
                         </div>
                     </div>
                 </div>
