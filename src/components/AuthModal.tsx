@@ -1,5 +1,7 @@
 import axios from 'axios';
 import React, { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const AuthModal = () => {
     const [showModal, setShowModal] = useState(false);
@@ -16,7 +18,7 @@ const AuthModal = () => {
         setIsLogin(!isLogin);
     };
 
-    const signupHandler = async (e:any) => {
+    const signupHandler = async (e: any) => {
         e.preventDefault();
         try {
             const response = await axios.post('/api/users/signup', {
@@ -24,27 +26,28 @@ const AuthModal = () => {
                 email,
                 password
             });
-            console.log(response.data.msg);
+            toast.success(response.data.msg);
 
             setName('');
             setEmail('');
             setPassword('');
 
-            setIsLogin(true); 
+            setIsLogin(true);
         } catch (error) {
             console.error('Error during signup:', error);
         }
     };
 
 
-    const loginHandler = async (e:any) => {
+    const loginHandler = async (e: any) => {
         e.preventDefault();
         try {
             const response = await axios.post('/api/users/signin', {
                 email,
                 password
             });
-            console.log(response.data.msg);
+            console.log(response.data);
+            toast.success(`Welcome ${response.data.user.name}`);
 
             setEmail('');
             setPassword('');
@@ -59,6 +62,7 @@ const AuthModal = () => {
 
     return (
         <div>
+            <ToastContainer />
             <button
                 onClick={toggleModal}
                 className="inline-flex mx-1 items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0"

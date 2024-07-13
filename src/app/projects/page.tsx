@@ -20,20 +20,32 @@ const Page = () => {
         <div className="flex flex-col lg:flex-row text-white min-h-screen bg-slate-900">
             <div className="lg:w-1/2 w-full p-6 lg:p-12 flex flex-col items-center my-5 text-lg space-y-4">
                 <div className="text-center">
-                    <h2 className="text-2xl font-bold">{projectData[currentImageIndex].heading}</h2>
-
-                    <p className="text-2xl font-normal my-5"><span className='font-bold italic text-gray-600'>About the Project : </span>{projectData[currentImageIndex].desc}</p>
-
-                    <p className="text-2xl font-normal"><span className='font-bold italic text-gray-600'>Tech Stacks for the project :</span> {projectData[currentImageIndex].techStack}</p>
-
-                    <button className='p-2 rounded border mx-3 my-5 bg-slate-500 text-black hover:bg-slate-900 hover:text-white'><Link href={projectData[currentImageIndex].gitRepo} target='_blank'>Github</Link></button>
-
-                    <button className='p-2 rounded border mx-3 my-5 bg-slate-500 text-black hover:bg-slate-900 hover:text-white'><Link href={projectData[currentImageIndex].hostedUrl} target='_blank'>Live Demo</Link></button>
+                    <h2 className="text-3xl font-bold">{projectData[currentImageIndex].heading}</h2>
+                    <p className="text-xl font-normal my-5">
+                        <span className='font-bold italic text-gray-400 mr-2'>About the Project:</span>
+                        {projectData[currentImageIndex].desc}
+                    </p>
+                    <p className="text-xl font-normal">
+                        <span className='font-bold italic text-gray-400 mr-2'>Tech Stacks for the project:</span>
+                        {projectData[currentImageIndex].techStack}
+                    </p>
+                    <div className="flex flex-wrap justify-center gap-4 my-5">
+                        <Link href={projectData[currentImageIndex].gitRepo} target='_blank'>
+                            <button className='px-5 py-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 text-white hover:from-purple-500 hover:to-blue-500 transition duration-300 shadow-md transform hover:scale-105'>
+                                Github
+                            </button>
+                        </Link>
+                        <Link href={projectData[currentImageIndex].hostedUrl} target='_blank'>
+                            <button className='px-5 py-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 text-white hover:from-purple-500 hover:to-blue-500 transition duration-300 shadow-md transform hover:scale-105'>
+                                Live Demo
+                            </button>
+                        </Link>
+                    </div>
                 </div>
             </div>
             <div className="lg:w-1/2 w-full flex flex-col items-center p-6 lg:p-12">
                 <div className="relative w-full" data-carousel="slide">
-                    <div className="relative h-56 md:h-96 overflow-hidden rounded-lg">
+                    <div className="relative h-56 md:h-96 overflow-hidden rounded-lg shadow-lg">
                         {projectData.map((item: any, index: any) => (
                             <div
                                 key={item.id}
@@ -43,19 +55,18 @@ const Page = () => {
                             >
                                 <img
                                     src={item.url.src}
-                                    className="block w-full h-full object-cover"
+                                    className="block w-full h-full object-cover rounded-lg"
                                     alt={`Slide ${index + 1}`}
                                 />
                             </div>
                         ))}
                     </div>
-
                     <div className="absolute z-30 flex space-x-3 bottom-5 left-1/2 transform -translate-x-1/2">
                         {projectData.map((_: any, index: any) => (
                             <button
                                 key={index}
                                 type="button"
-                                className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentImageIndex ? 'bg-blue-500' : 'bg-gray-300'
+                                className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentImageIndex ? 'bg-blue-500' : 'bg-gray-400'
                                     }`}
                                 aria-current={index === currentImageIndex}
                                 aria-label={`Slide ${index + 1}`}
@@ -64,7 +75,6 @@ const Page = () => {
                             />
                         ))}
                     </div>
-
                     <button
                         type="button"
                         className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
@@ -118,6 +128,7 @@ const Page = () => {
                 </div>
             </div>
         </div>
+
     );
 };
 

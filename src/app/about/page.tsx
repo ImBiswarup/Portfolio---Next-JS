@@ -7,7 +7,7 @@ import React from 'react'
 
 
 
-const page = () => {  
+const page = () => {
   return (
     <div>
       <section className="text-gray-400 bg-gray-900 body-font py-5">
@@ -32,14 +32,14 @@ const page = () => {
                 </div>
                 <div className="mb-10">
                   <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-                    {/* <div className="flex-shrink-0 w-24 h-24 bg-gray-800 text-indigo-400 rounded-full inline-flex items-center justify-center"> */}
-                    <Image
-                      src={user.class10.url}
-                      alt="Class 10 School"
-                      width={70}
-                      height={70}
-                    />
-                    {/* </div> */}
+                    <div className="flex-shrink-0 w-24 h-24 bg-gray-800 text-indigo-400 rounded-full inline-flex items-center justify-center">
+                      <Image
+                        src={user.class10.url}
+                        alt="Class 10 School"
+                        width={70}
+                        height={70}
+                      />
+                    </div>
                     <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
                       <h2 className="font-medium title-font text-white mb-1 text-xl">{user.class10.class10School}</h2>
                       <p className="leading-relaxed">Marks: {user.class10.class10Marks}</p>
@@ -58,14 +58,14 @@ const page = () => {
                 </div>
                 <div className="mb-10">
                   <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-                    {/* <div className="flex-shrink-0 w-24 h-24 bg-gray-800 text-indigo-400 rounded-full inline-flex items-center justify-center"> */}
-                    <Image
-                      src={user.class12.url}
-                      alt="Class 10 School"
-                      width={70}
-                      height={70}
-                    />
-                    {/* </div> */}
+                    <div className="flex-shrink-0 w-24 h-24 bg-gray-800 text-indigo-400 rounded-full inline-flex items-center justify-center">
+                      <Image
+                        src={user.class12.url}
+                        alt="Class 10 School"
+                        width={70}
+                        height={70}
+                      />
+                    </div>
                     <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
                       <h2 className="font-medium title-font text-white mb-1 text-xl">{user.class12.class12School}</h2>
                       <p className="leading-relaxed">Marks: {user.class12.class12Marks}</p>
@@ -84,14 +84,14 @@ const page = () => {
                 </div>
                 <div className="mb-10">
                   <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-                    {/* <div className="flex-shrink-0 w-24 h-24 bg-gray-800 text-indigo-400 rounded-full inline-flex items-center justify-center"> */}
-                    <Image
-                      src={user.college.url}
-                      alt="Class 10 School"
-                      width={70}
-                      height={70}
-                    />
-                    {/* </div> */}
+                    <div className="flex-shrink-0 w-24 h-24 bg-gray-800 text-indigo-400 rounded-full inline-flex items-center justify-center">
+                      <Image
+                        src={user.college.url}
+                        alt="Class 10 School"
+                        width={70}
+                        height={70}
+                      />
+                    </div>
                     <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
                       <h2 className="font-medium title-font text-white mb-1 text-xl">{user.college.name}</h2>
                       <p className="leading-relaxed">{user.college.dept}</p>
@@ -125,12 +125,12 @@ const page = () => {
                     style={{ boxShadow: `0 4px 6px -1px ${techStack.color.replace(/-500/, '')}, 0 2px 4px -1px ${techStack.color.replace(/-500/, '')}` }}
                   >
                     <techStack.Icon
-                      className="w-16 h-16 text-gray-200 object-cover object-center flex-shrink-0 rounded-full mr-4 transition-colors duration-300 group-hover:text-current"
+                      className={`w-16 h-16 text-gray-300 object-cover object-center flex-shrink-0 rounded-full mr-4 transition-colors duration-300 group-hover:text-white`}
                       style={{ transition: 'color 0.3s', color: techStack.color }}
                     />
                     <div className="flex-grow">
                       <h2
-                        className={`title-font font-medium text-white transition-colors duration-300 group-hover:text-${techStack.color}`}
+                        className={`title-font font-medium group-hover:text-white transition-colors duration-300`}
                       >
                         {techStack.name}
                       </h2>
@@ -148,7 +148,7 @@ const page = () => {
         </div>
       </section>
 
-      
+
 
     </div>
   )
