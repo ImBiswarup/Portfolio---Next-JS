@@ -5,10 +5,10 @@ import React from 'react';
 import { usePathname } from 'next/navigation';
 import AuthModal from './AuthModal';
 
-const Header = () => {
+const Header: React.FC = () => {
   const pathname = usePathname();
 
-  const linkClasses = (path: any) =>
+  const linkClasses = (path: string) =>
     pathname === path
       ? 'mr-5 text-blue-600 font-bold animate-text bg-gradient-to-r from-blue-500 via-slate-300 to-blue-500 bg-clip-text text-transparent text-xl font-black'
       : 'mr-5 hover:text-white';
