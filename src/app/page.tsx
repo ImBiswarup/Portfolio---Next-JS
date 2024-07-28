@@ -32,7 +32,7 @@ export default function Home() {
                     </div>
                     <div className="w-full sm:w-[60%] flex flex-col items-center sm:items-start justify-center max-w-full mt-5 sm:mt-0 sm:ml-5">
                         <div className="desc text-white p-6 sm:p-8 rounded-lg 
-                         transition-transform ease-out transform hover:scale-105">
+                         transition-transform ease-out transform ">
                             <p className="mb-8 leading-relaxed text-gray-300 text-base md:text-lg lg:text-xl xl:text-2xl font-medium first-letter:text-7xl first-letter:font-bold">
                                 A Passionate and aspiring <span className='text-blue-400 font-semibold'>{text}</span> <br /> currently pursuing my B.Tech in <span className='text-blue-400 font-semibold'>Computer Science & Engineering</span> <br /> Throughout my academic journey, I have cultivated a strong foundation in <span className='text-blue-400 font-semibold'>Programming</span> and <span className='text-blue-400 font-semibold'>Development</span>, and I am eager to apply my skills in real-world projects.
                             </p>
@@ -41,9 +41,12 @@ export default function Home() {
                             <Link href="/contact" className="border rounded-full px-6 py-3 text-white bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 transition duration-300 shadow-md transform hover:scale-105 text-xl font-semibold">
                                 Hire Me
                             </Link>
-                            <button className="border rounded-full px-6 py-3 text-white bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 transition duration-300 shadow-md transform hover:scale-105 text-xl font-semibold">
+                            <a
+                                href='/Biswarup_Ghosh_CV.pdf' target="_blank"
+                                download="Biswarup_Ghosh_CV.pdf"
+                                className="border rounded-full px-6 py-3 text-white bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 transition duration-300 shadow-md transform hover:scale-105 text-xl font-semibold">
                                 Download CV
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>

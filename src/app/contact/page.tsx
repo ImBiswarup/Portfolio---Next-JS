@@ -28,22 +28,6 @@ const Page = () => {
         }
     };
 
-    useEffect(() => {
-        const getUsers = async () => {
-            try {
-                const response = await axios.get("/api/users/all-user");
-                const userName = response.data.users[0].name;
-                const userEmail = response.data.users[0].email;
-                setName(userName);
-                setEmail(userEmail);
-                console.log("Users: ", response.data.users[0].name);
-            } catch (error) {
-                console.error("Error fetching users: ", error);
-            }
-        };
-        getUsers();
-    }, []);
-
     return (
         <div>
             <ToastContainer />
@@ -79,7 +63,7 @@ const Page = () => {
                                 </button>
                             </div>
                             <div className="p-2 w-full pt-8 mt-8 border-t border-gray-800 text-center">
-                                <a className="text-indigo-400">biswaurpg451@gmail.com</a>
+                                <p className="text-indigo-400">biswaurpg451@gmail.com</p>
                                 <p className="leading-normal my-5">Ichapur
                                     <br />Kolkata, West Bengal
                                 </p>
