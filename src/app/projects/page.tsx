@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { projectData } from '@/utils/projectData';
 import Link from 'next/link';
-
+import Image from 'next/image';
 
 const Page = () => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -53,9 +53,11 @@ const Page = () => {
                                     }`}
                                 data-carousel-item
                             >
-                                <img
+                                <Image
                                     src={item.url.src}
-                                    className="block w-full h-full object-cover rounded-lg"
+                                    layout="fill"
+                                    objectFit="cover"
+                                    className="block w-full h-full rounded-lg"
                                     alt={`Slide ${index + 1}`}
                                 />
                             </div>
