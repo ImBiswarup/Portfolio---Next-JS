@@ -1,7 +1,7 @@
 "use client"
 
 import Link from 'next/link';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { IoMdSend } from "react-icons/io";
 import { userData } from "@/utils/Data";
 import axios from 'axios';
