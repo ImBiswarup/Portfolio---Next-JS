@@ -1,10 +1,9 @@
-"use client"
+"use client";
 
-import { userData } from '@/utils/Data'
-import { techStacks } from '@/utils/techStack'
-import Image from 'next/image'
-import React from 'react'
-
+import { userData } from '@/utils/Data';
+import { techStacks } from '@/utils/techStack';
+import Image from 'next/image';
+import React from 'react';
 
 const page = () => {
   return (
@@ -108,7 +107,7 @@ const page = () => {
           <div className="flex flex-col text-center w-full mb-20">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Tech Stacks</h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-              Though I'm a MERN stack developer but I'm comfortable in the following technologies
+              Though I&apos;m a MERN stack developer but I&apos;m comfortable in the following technologies
             </p>
           </div>
           <div className="flex flex-wrap -m-2">
@@ -146,11 +145,8 @@ const page = () => {
           </div>
         </div>
       </section>
-
-
-
     </div>
-  )
+  );
 }
 
-export default page
+export default page;
