@@ -10,7 +10,7 @@ export async function POST(req: NextRequest) {
         const { name, email, message } = reqBody;
 
         if (!name || !email || !message) {
-            return NextResponse.status(400).json({ msg: "Invalid input" });
+            return NextResponse.json({ msg: "Invalid input" }, { status: 400 });
         }
 
         const receivedMessage = await Message.create({ name, email, message });
