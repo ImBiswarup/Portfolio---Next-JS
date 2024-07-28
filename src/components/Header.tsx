@@ -17,7 +17,7 @@ const Header: React.FC = () => {
     <header className="text-gray-400 bg-gray-900 body-font">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <Link href="/" className="flex title-font font-medium items-center text-white mb-4 md:mb-0">
-          <span className="ml-3 mr-5 text-blue-600 font-bold animate-text bg-gradient-to-r from-slate-800 via-slate-300 to-slate-800 bg-clip-text text-transparent text-xl">Biswarup's Page</span>
+          <span className="ml-3 mr-5 text-blue-600 font-bold animate-text bg-gradient-to-r from-slate-800 via-slate-300 to-slate-800 bg-clip-text text-transparent text-xl">Biswarup&apos;s Page</span>
         </Link>
         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
           <Link href="/" className={linkClasses('/')}>Home</Link>
