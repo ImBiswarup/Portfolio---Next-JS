@@ -1,5 +1,4 @@
 "use client";
-
 import { userData } from "@/utils/Data";
 import Image from "next/image";
 import Link from "next/link";
@@ -23,7 +22,7 @@ export default function Home() {
                         <div className="relative w-full flex items-center justify-center bg-gray-800 p-6 rounded-full shadow-lg">
                             <Image
                                 className="rounded-full"
-                                src={myImg}
+                                src={'https://res.cloudinary.com/djrdw0sqz/image/upload/v1725100842/myImg_q3lyty.jpg'}
                                 width={400}
                                 height={400}
                                 alt="image"

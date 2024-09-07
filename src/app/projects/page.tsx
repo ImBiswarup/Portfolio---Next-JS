@@ -54,7 +54,7 @@ const Page = () => {
                                 data-carousel-item
                             >
                                 <Image
-                                    src={item.url.src}
+                                    src={item.url}
                                     layout="fill"
                                     objectFit="cover"
                                     className="block w-full h-full rounded-lg"
