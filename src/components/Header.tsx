@@ -25,7 +25,7 @@ const Header: React.FC = () => {
           <Link href="/projects" className={linkClasses('/projects')}>Projects</Link>
           <Link href="/contact" className={linkClasses('/contact')}>Contact</Link>
         </nav>
-        <AuthModal />
+        {/* <AuthModal /> */}
       </div>
     </header>
   );

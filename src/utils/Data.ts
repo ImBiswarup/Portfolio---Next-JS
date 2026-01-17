@@ -19,6 +19,7 @@ export const userData = [
             name: "Regent Education & Research Foundation",
             course: "B.Tech",
             dept: "Computer Science & Engineering",
+            CGPA: "8.12",
             url: "https://www.svgrepo.com/show/100393/college.svg"
         },
 

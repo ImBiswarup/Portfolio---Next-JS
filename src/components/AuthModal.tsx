@@ -47,6 +47,8 @@ const AuthModal = () => {
                 password
             });
             console.log(response.data);
+            localStorage.setItem('userInfo', JSON.stringify(response.data.user));
+            localStorage.setItem('token', response.data.token);
             toast.success(`Welcome ${response.data.user.name}`);
 
             setEmail('');

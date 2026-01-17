@@ -40,7 +40,7 @@ const page = () => {
                     </div>
                     <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
                       <h2 className="font-medium title-font text-white mb-1 text-xl">{user.class10.class10School}</h2>
-                      <p className="leading-relaxed">Marks: {user.class10.class10Marks}</p>
+                      <p className="leading-relaxed">{user.class10.class10Marks}%</p>
                     </div>
                   </div>
                 </div>
@@ -66,7 +66,7 @@ const page = () => {
                     </div>
                     <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
                       <h2 className="font-medium title-font text-white mb-1 text-xl">{user.class12.class12School}</h2>
-                      <p className="leading-relaxed">Marks: {user.class12.class12Marks}</p>
+                      <p className="leading-relaxed">{user.class12.class12Marks}%</p>
                     </div>
                   </div>
                 </div>
@@ -93,6 +93,7 @@ const page = () => {
                     <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
                       <h2 className="font-medium title-font text-white mb-1 text-xl">{user.college.name}</h2>
                       <p className="leading-relaxed">{user.college.dept}</p>
+                      <p className="leading-relaxed">{user.college.CGPA}</p>
                     </div>
                   </div>
                 </div>
