@@ -3,7 +3,6 @@
 import Link from 'next/link';
 import React from 'react';
 import { usePathname } from 'next/navigation';
-import AuthModal from './AuthModal';
 
 const Header: React.FC = () => {
   const pathname = usePathname();
