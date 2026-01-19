@@ -41,7 +41,7 @@ export default function Home() {
                                 Hire Me
                             </Link>
                             <a
-                                href='/Biswarup_Ghosh_CV.pdf' target="_blank"
+                                href='/Biswarup_Ghosh_resume.pdf' target="_blank"
                                 download="Biswarup_Ghosh_CV.pdf"
                                 className="border rounded-full px-6 py-3 text-white bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 transition duration-300 shadow-md transform hover:scale-105 text-xl font-semibold">
                                 Download CV
