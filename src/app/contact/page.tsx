@@ -20,6 +20,8 @@ const Page = () => {
                 name, email, message
             });
             toast.success("Message sent successfully!");
+            setName('')
+            setEmail('')
             setMessage('')
             console.log(response.data.msg);
         } catch (error) {
@@ -58,7 +60,7 @@ const Page = () => {
                                 </div>
                             </div>
                             <div className="p-2 w-full">
-                                <button onClick={contactMe} className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                                <button onClick={contactMe} className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg hover:scale-105 transition-transform duration-300 ease-in-out items-center hover:rounded-full hover:bg-transparent ">
                                     <IoMdSend size={25} />
                                 </button>
                             </div>

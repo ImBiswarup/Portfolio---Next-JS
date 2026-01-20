@@ -19,13 +19,12 @@ export const userData = [
             name: "Regent Education & Research Foundation",
             course: "B.Tech",
             dept: "Computer Science & Engineering",
-            CGPA: "8.12",
             url: "https://www.svgrepo.com/show/100393/college.svg"
         },
 
-        description: " A Passionate and aspiring Fullstack Web Developer currently pursuing my B.Tech in Computer Science & Engineering Throughout my academic journey, I have cultivated a strong foundation in Programming and Web Development, and I am eager to apply my skills in real-world projects.",
+        description: " A Passionate and aspiring Fullstack Web Developer, B.Tech in Computer Science & Engineering, I have cultivated a strong foundation in Programming and Web Development, and I am eager to apply my skills in real-world projects.",
 
-        
+
         facebook: "https://www.facebook.com/biswa.ghosh.927/",
         insta: "https://www.instagram.com/i_ambiswarup/",
         twitter: "https://x.com/Im_Biswarup",
