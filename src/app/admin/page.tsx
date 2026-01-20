@@ -139,13 +139,6 @@ export default function UploadPage() {
           Upload Project
         </button>
       </form>
-
-      {url && (
-        <div className="mt-6">
-          <p className="font-semibold">Uploaded Image Preview:</p>
-          <img src={url} alt="Uploaded" className="max-w-xs rounded shadow mt-2" />
-        </div>
-      )}
     </div>
   );
 }
